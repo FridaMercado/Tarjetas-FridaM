@@ -1,210 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
-p, h1, h2{
+*{
     margin: 0px;
+    padding: 0px;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
+}
+/*inicia header*/
+header{
+    display: flex;
+    flex-direction: column;
 }
 .discount{
     background-color: #1CD1B0;
     color: black;
     font-family: 'Noto Sans', sans-serif;
     font-weight:lighter;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 1rem; /*espaciado entre texto y borde*/
     box-sizing: border-box;
-    height: 50px;
+    height: 40px;
+    display: flex; /*para darle el valor de align center que esta aqui abajo*/
+    align-items: center; /*lo centra al medio de la caja*/
 }
-.titulo{
+.logotipo{
     background-color: #00669F;
-    color: black;
+    color: white;
     font-family: 'Noto Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 40px;
+    font-size: 1rem;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 20px;
+    padding: 1rem;
     height: 100px;
     box-sizing: border-box;
+    display: flex; /*para que me ponga la imagen y el texto uno al lado del otro*/
+    align-items: center; /*lo centra al medio de la caja*/
 }
-.cards{
-    width: 960px;
-    height: 900px;
-    padding: 150px 60px 50px 60px;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 16px;
-
-}
-
-.batman1 {
-    width: 350px;
-    height: 500px;
-    border-radius: 16px 16px 0 0;
-    background-color: #F3F3F3;
-    box-sizing: border-box;
-    border-bottom: 3px solid #a7a7a7;
-}
-.corazon1 {
-    width: 30px;
-    height: 30px;
-    bottom: -15px;
-    left: 15px;
-    color: red;
-    position: relative;
-    z-index: 150;
-}
-.fondo1 img{
-    width: 350px;
-    height: 200px;
-    border-radius: 16px 16px 0px 0px;
-    position: relative;
-    z-index: 0;
-    top: -30px;
-
-}
-.cara1 img{
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    top: -90px;
-    position: relative;
-}
-.info1 h2{
-    text-align: center;
-    margin-bottom: 15px;
-}
-.info1 {
-    padding: 0 30px 0 30px;
-    position: relative;
-    top: -90px;
-    text-align: center;
-}
-.caja1 {
-    background-color: #00669F;
+.navegacion{
+    background-color: #001D2D;
     color: white;
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    height: 30px;
-    padding-top: 5px;
-}
-
-.batman2 {
-    width: 350px;
-    height: 500px;
-    border-radius: 16px 16px 0 0;
-    background-color: #F3F3F3;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-align: right;
+    padding: 1rem;
     box-sizing: border-box;
-    border-bottom: 3px solid #a7a7a7;
-    position: relative;
-    top: -500px;
-    left: 400px;
-
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.corazon2 {
-    width: 30px;
-    height: 30px;
-    bottom: -15px;
-    left: 15px;
-    color: red;
-    position: relative;
-    z-index: 150;
+nav .lista{
+    list-style: none;
+    display: flex; /*para que cada link los ponga uno al lado del otro*/
+    justify-content: space-around; /*separación uniforme*/
+    width: 300px;
 }
-.fondo2 img{
-    width: 350px;
-    height: 200px;
-    border-radius: 16px 16px 0px 0px;
-    position: relative;
-    z-index: 0;
-    top: -30px;
-
-}
-.cara2 img{
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    top: -90px;
-    position: relative;
-}
-.info2 h2{
-    text-align: center;
-    margin-bottom: 15px;
-}
-.info2 {
-    padding: 0 30px 0 30px;
-    position: relative;
-    top: -90px;
-    text-align: center;
-}
-.caja2 {
-    background-color: #00669F;
+.item-nav{
     color: white;
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    height: 30px;
-    padding-top: 5px;
+    text-decoration: none;
+
 }
 
-.batman3 {
-    width: 350px;
-    height: 500px;
-    border-radius: 16px 16px 0 0;
-    background-color: #F3F3F3;
+/*inicia body*/
+.cajaform{
+    background-color: #00669F;
+    color:white;
+    padding: 1rem;
     box-sizing: border-box;
-    border-bottom: 3px solid #a7a7a7;
-    position: relative;
-    top: -1000px;
-    left: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    width: 800px;
+    height: 800px;
+    margin: 90px;
+    box-sizing: border-box;
+    border-radius: 13px;
 }
-.corazon3 {
-    width: 30px;
-    height: 30px;
-    bottom: -15px;
-    left: 15px;
-    color: red;
-    position: relative;
-    z-index: 150;
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-.fondo3 img{
-    width: 350px;
-    height: 200px;
-    border-radius: 16px 16px 0px 0px;
-    position: relative;
-    z-index: 0;
-    top: -30px;
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+    box-sizing: border-box;
+    padding: 1rem 4rem;
+}
+
+.primera{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+.segunda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button{
+    background-color: #1CD1B0;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    box-sizing: border-box;
+    border-radius: 23px;
+    font-weight: bolder;
+    font-style: bold;
+    height: 5rem;
+    width: 30rem;
+    text-align: center;
 
 }
-.cara3 img{
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    top: -90px;
-    position: relative;
+.nombre, .fecha, .especie, .foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5rem;
+    width: 300px;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
-.info3 h2{
-    text-align: center;
-    margin-bottom: 15px;
+.poderes, .personaje{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 300px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    align-content: flex-start;
 }
-.info3 {
-    padding: 0 30px 0 30px;
-    position: relative;
-    top: -90px;
-    text-align: center;
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    width: 300px;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
-.caja3 {
-    background-color: #00669F;
-    color: white;
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    height: 30px;
-    padding-top: 5px;
+
+textarea{
+    width: 20rem;
+    height: 700rem;
+    box-sizing: border-box;
+    border-radius: 13px;
+
 }
+
+.primera input, .segunda select{
+    width: 20rem;
+    height: 3rem;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+hr{
+    width: 300px;
+}
+
 
 .footer{
     background-color: #00669F;
@@ -213,8 +185,10 @@ p, h1, h2{
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     box-sizing: border-box;
     padding-top: 15px;
     padding-left: 30px;
+    font-family: ;
 }
