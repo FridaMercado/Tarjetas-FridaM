@@ -148,6 +148,7 @@ button{
     align-items: flex-start;
     box-sizing: border-box;
     align-content: flex-start;
+    gap: 1rem;
 }
 .descripcion{
     display: flex;
